@@ -2,6 +2,14 @@
 
 :root {
   --black: #2e2e27;
+  --neon: #e0ff88;
+}
+
+::selection {
+  background: var(--neon); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--neon); /* Gecko Browsers */
 }
 
 body {
@@ -24,7 +32,7 @@ body {
   line-height: 40px;
   margin: 10px 0;
   padding: 40px 20px;
-  background-image: linear-gradient(270deg,hsl(64, 100%, 74%),#e0ff88);
+  background-image: linear-gradient(270deg,hsl(64, 100%, 74%),var(--neon));
   border: var(--black) 1px solid;
   border-right: none;
   border-radius: 8px 0 0 8px;
